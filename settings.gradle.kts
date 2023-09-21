@@ -6,6 +6,5 @@ pluginManagement {
     }
 }
 
-//include(":app", ":shared")
-include(":app")
+include(":app", ":shared")
 rootProject.name = "KMP POC - JSONPlaceholder API Client"

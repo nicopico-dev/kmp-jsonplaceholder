@@ -1,7 +1,6 @@
 plugins {
-    alias(libs.plugins.kotlin.multiplatform)
-    //kotlin("multiplatform")
-    alias(libs.plugins.android.library)
+    kotlin("multiplatform")
+    id("com.android.library")
 }
 
 kotlin {

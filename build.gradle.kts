@@ -1,6 +1,7 @@
-//plugins {
-//    alias(libs.plugins.kotlin.multiplatform) apply false
-//}
+plugins {
+    kotlin("multiplatform") version libs.versions.kotlin.get() apply false
+    id("com.android.library") version libs.versions.android.gradle.plugin.get() apply false
+}
 
 allprojects {
     repositories {
