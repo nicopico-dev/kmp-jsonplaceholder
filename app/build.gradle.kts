@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    //kotlin("android")
     alias(libs.plugins.kotlin.android)
 }
 
@@ -41,7 +42,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":shared"))
+    //implementation(project(":shared"))
 
     // Compose BOM
     val composeBom = platform(libs.androidx.compose.bom)

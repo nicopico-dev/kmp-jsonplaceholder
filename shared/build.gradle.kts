@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
+    //kotlin("multiplatform")
     alias(libs.plugins.android.library)
 }
 
