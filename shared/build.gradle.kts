@@ -4,6 +4,8 @@ plugins {
 }
 
 kotlin {
+    jvmToolchain(17)
+
     androidTarget()
     ios()
     // Note: iosSimulatorArm64 target requires that all dependencies have M1 support
@@ -65,5 +67,10 @@ android {
         unitTests {
             isIncludeAndroidResources = true
         }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
