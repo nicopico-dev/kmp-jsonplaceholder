@@ -1,5 +1,6 @@
 plugins {
     kotlin("multiplatform")
+    kotlin("native.cocoapods")
     id("com.android.library")
 }
 
@@ -53,6 +54,17 @@ kotlin {
         .configureEach {
             languageSettings.optIn("kotlin.time.ExperimentalTime")
         }
+
+    cocoapods {
+        summary = "Common library"
+        homepage = "https://github.com/nicopico-dev/kmp-jsonplaceholder"
+        version = "1.0"
+        framework {
+            isStatic = false // SwiftUI preview requires dynamic framework
+        }
+        ios.deploymentTarget = "12.4"
+        podfile = project.file("../ios/Podfile")
+    }
 }
 
 android {

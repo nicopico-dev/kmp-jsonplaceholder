@@ -1,0 +1,6 @@
+framework module Pods_kmp_jsonplaceholder_ios {
+  umbrella header "Pods-kmp-jsonplaceholder-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
