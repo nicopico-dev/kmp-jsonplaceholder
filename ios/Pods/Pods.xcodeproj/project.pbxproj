@@ -15,36 +15,35 @@
 			dependencies = (
 			);
 			name = SwiftLint;
-			productName = SwiftLint;
 		};
 		8777C9F6889E59EFFD631D80AEE9048B /* shared */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 46EB2E000001A0 /* Build configuration list for PBXAggregateTarget "shared" */;
 			buildPhases = (
-				46EB2E00000380 /* [CP-User] Build shared */,
+				46EB2E000003A0 /* [CP-User] Build shared */,
+				46EB2E00000390 /* [CP] Copy dSYMs */,
 			);
 			dependencies = (
 			);
 			name = shared;
-			productName = shared;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		46EB2E000002B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E000002A0 /* Foundation.framework */; };
-		46EB2E00000320 /* Pods-kmp-jsonplaceholder-ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00000310 /* Pods-kmp-jsonplaceholder-ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46EB2E00000370 /* Pods-kmp-jsonplaceholder-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000360 /* Pods-kmp-jsonplaceholder-ios-dummy.m */; };
+		46EB2E000002C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E000002B0 /* Foundation.framework */; };
+		46EB2E00000330 /* Pods-kmp-jsonplaceholder-ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00000320 /* Pods-kmp-jsonplaceholder-ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EB2E00000380 /* Pods-kmp-jsonplaceholder-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000370 /* Pods-kmp-jsonplaceholder-ios-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		46EB2E00000390 /* PBXContainerItemProxy */ = {
+		46EB2E000003B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
 			remoteInfo = SwiftLint;
 		};
-		46EB2E000003B0 /* PBXContainerItemProxy */ = {
+		46EB2E000003D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
@@ -54,32 +53,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46EB2E000000D0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E000000D0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46EB2E000000F0 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = build/cocoapods/framework/shared.framework; sourceTree = "<group>"; };
-		46EB2E00000110 /* shared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = shared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00000110 /* shared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = shared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46EB2E00000170 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
 		46EB2E00000180 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		46EB2E000001E0 /* shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.debug.xcconfig; sourceTree = "<group>"; };
 		46EB2E000001F0 /* shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.release.xcconfig; sourceTree = "<group>"; };
-		46EB2E000002A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		46EB2E000002D0 /* Pods-kmp-jsonplaceholder-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kmp-jsonplaceholder-ios.release.xcconfig"; sourceTree = "<group>"; };
-		46EB2E000002E0 /* Pods-kmp-jsonplaceholder-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kmp-jsonplaceholder-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		46EB2E000002F0 /* Pods-kmp-jsonplaceholder-ios-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kmp-jsonplaceholder-ios-Info.plist"; sourceTree = "<group>"; };
-		46EB2E00000300 /* Pods-kmp-jsonplaceholder-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-kmp-jsonplaceholder-ios.modulemap"; sourceTree = "<group>"; };
-		46EB2E00000310 /* Pods-kmp-jsonplaceholder-ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kmp-jsonplaceholder-ios-umbrella.h"; sourceTree = "<group>"; };
-		46EB2E00000330 /* Pods-kmp-jsonplaceholder-ios-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kmp-jsonplaceholder-ios-frameworks.sh"; sourceTree = "<group>"; };
-		46EB2E00000340 /* Pods-kmp-jsonplaceholder-ios-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kmp-jsonplaceholder-ios-acknowledgements.plist"; sourceTree = "<group>"; };
-		46EB2E00000350 /* Pods-kmp-jsonplaceholder-ios-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kmp-jsonplaceholder-ios-acknowledgements.markdown"; sourceTree = "<group>"; };
-		46EB2E00000360 /* Pods-kmp-jsonplaceholder-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kmp-jsonplaceholder-ios-dummy.m"; sourceTree = "<group>"; };
+		46EB2E00000200 /* shared-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "shared-copy-dsyms.sh"; sourceTree = "<group>"; };
+		46EB2E000002B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		46EB2E000002E0 /* Pods-kmp-jsonplaceholder-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kmp-jsonplaceholder-ios.release.xcconfig"; sourceTree = "<group>"; };
+		46EB2E000002F0 /* Pods-kmp-jsonplaceholder-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kmp-jsonplaceholder-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00000300 /* Pods-kmp-jsonplaceholder-ios-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kmp-jsonplaceholder-ios-Info.plist"; sourceTree = "<group>"; };
+		46EB2E00000310 /* Pods-kmp-jsonplaceholder-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-kmp-jsonplaceholder-ios.modulemap"; sourceTree = "<group>"; };
+		46EB2E00000320 /* Pods-kmp-jsonplaceholder-ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kmp-jsonplaceholder-ios-umbrella.h"; sourceTree = "<group>"; };
+		46EB2E00000340 /* Pods-kmp-jsonplaceholder-ios-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kmp-jsonplaceholder-ios-frameworks.sh"; sourceTree = "<group>"; };
+		46EB2E00000350 /* Pods-kmp-jsonplaceholder-ios-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kmp-jsonplaceholder-ios-acknowledgements.plist"; sourceTree = "<group>"; };
+		46EB2E00000360 /* Pods-kmp-jsonplaceholder-ios-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kmp-jsonplaceholder-ios-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46EB2E00000370 /* Pods-kmp-jsonplaceholder-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kmp-jsonplaceholder-ios-dummy.m"; sourceTree = "<group>"; };
 		605FEE1C3F0DBA6C476BC348A96654CD /* Pods-kmp-jsonplaceholder-ios */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-kmp-jsonplaceholder-ios"; path = Pods_kmp_jsonplaceholder_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		46EB2E00000270 /* Frameworks */ = {
+		46EB2E00000280 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E000002B0 /* Foundation.framework in Frameworks */,
+				46EB2E000002C0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +109,7 @@
 		46EB2E00000060 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000290 /* iOS */,
+				46EB2E000002A0 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,7 +117,7 @@
 		46EB2E00000070 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E000002C0 /* Pods-kmp-jsonplaceholder-ios */,
+				46EB2E000002D0 /* Pods-kmp-jsonplaceholder-ios */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -143,6 +143,7 @@
 			children = (
 				46EB2E00000160 /* Support Files */,
 			);
+			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
@@ -186,6 +187,7 @@
 		46EB2E000001D0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				46EB2E00000200 /* shared-copy-dsyms.sh */,
 				46EB2E000001E0 /* shared.debug.xcconfig */,
 				46EB2E000001F0 /* shared.release.xcconfig */,
 			);
@@ -193,26 +195,26 @@
 			path = "../ios/Pods/Target Support Files/shared";
 			sourceTree = "<group>";
 		};
-		46EB2E00000290 /* iOS */ = {
+		46EB2E000002A0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E000002A0 /* Foundation.framework */,
+				46EB2E000002B0 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		46EB2E000002C0 /* Pods-kmp-jsonplaceholder-ios */ = {
+		46EB2E000002D0 /* Pods-kmp-jsonplaceholder-ios */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000300 /* Pods-kmp-jsonplaceholder-ios.modulemap */,
-				46EB2E00000350 /* Pods-kmp-jsonplaceholder-ios-acknowledgements.markdown */,
-				46EB2E00000340 /* Pods-kmp-jsonplaceholder-ios-acknowledgements.plist */,
-				46EB2E00000360 /* Pods-kmp-jsonplaceholder-ios-dummy.m */,
-				46EB2E00000330 /* Pods-kmp-jsonplaceholder-ios-frameworks.sh */,
-				46EB2E000002F0 /* Pods-kmp-jsonplaceholder-ios-Info.plist */,
-				46EB2E00000310 /* Pods-kmp-jsonplaceholder-ios-umbrella.h */,
-				46EB2E000002E0 /* Pods-kmp-jsonplaceholder-ios.debug.xcconfig */,
-				46EB2E000002D0 /* Pods-kmp-jsonplaceholder-ios.release.xcconfig */,
+				46EB2E00000310 /* Pods-kmp-jsonplaceholder-ios.modulemap */,
+				46EB2E00000360 /* Pods-kmp-jsonplaceholder-ios-acknowledgements.markdown */,
+				46EB2E00000350 /* Pods-kmp-jsonplaceholder-ios-acknowledgements.plist */,
+				46EB2E00000370 /* Pods-kmp-jsonplaceholder-ios-dummy.m */,
+				46EB2E00000340 /* Pods-kmp-jsonplaceholder-ios-frameworks.sh */,
+				46EB2E00000300 /* Pods-kmp-jsonplaceholder-ios-Info.plist */,
+				46EB2E00000320 /* Pods-kmp-jsonplaceholder-ios-umbrella.h */,
+				46EB2E000002F0 /* Pods-kmp-jsonplaceholder-ios.debug.xcconfig */,
+				46EB2E000002E0 /* Pods-kmp-jsonplaceholder-ios.release.xcconfig */,
 			);
 			name = "Pods-kmp-jsonplaceholder-ios";
 			path = "Target Support Files/Pods-kmp-jsonplaceholder-ios";
@@ -221,11 +223,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		46EB2E00000250 /* Headers */ = {
+		46EB2E00000260 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000320 /* Pods-kmp-jsonplaceholder-ios-umbrella.h in Headers */,
+				46EB2E00000330 /* Pods-kmp-jsonplaceholder-ios-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,18 +236,18 @@
 /* Begin PBXNativeTarget section */
 		58D0A7C4B827C5A338B487D64D7FF846 /* Pods-kmp-jsonplaceholder-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E00000210 /* Build configuration list for PBXNativeTarget "Pods-kmp-jsonplaceholder-ios" */;
+			buildConfigurationList = 46EB2E00000220 /* Build configuration list for PBXNativeTarget "Pods-kmp-jsonplaceholder-ios" */;
 			buildPhases = (
-				46EB2E00000250 /* Headers */,
-				46EB2E00000260 /* Sources */,
-				46EB2E00000270 /* Frameworks */,
-				46EB2E00000280 /* Resources */,
+				46EB2E00000260 /* Headers */,
+				46EB2E00000270 /* Sources */,
+				46EB2E00000280 /* Frameworks */,
+				46EB2E00000290 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				46EB2E000003A0 /* PBXTargetDependency */,
 				46EB2E000003C0 /* PBXTargetDependency */,
+				46EB2E000003E0 /* PBXTargetDependency */,
 			);
 			name = "Pods-kmp-jsonplaceholder-ios";
 			productName = Pods_kmp_jsonplaceholder_ios;
@@ -259,7 +261,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 46EB2E00000030 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -282,7 +284,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		46EB2E00000280 /* Resources */ = {
+		46EB2E00000290 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,7 +294,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		46EB2E00000380 /* [CP-User] Build shared */ = {
+		46EB2E00000390 /* [CP] Copy dSYMs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/shared/shared-copy-dsyms-input-files.xcfilelist",
+			);
+			name = "[CP] Copy dSYMs";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/shared/shared-copy-dsyms-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/shared/shared-copy-dsyms.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46EB2E000003A0 /* [CP-User] Build shared */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,28 +324,28 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		46EB2E00000260 /* Sources */ = {
+		46EB2E00000270 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000370 /* Pods-kmp-jsonplaceholder-ios-dummy.m in Sources */,
+				46EB2E00000380 /* Pods-kmp-jsonplaceholder-ios-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		46EB2E000003A0 /* PBXTargetDependency */ = {
+		46EB2E000003C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftLint;
 			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = 46EB2E00000390 /* PBXContainerItemProxy */;
+			targetProxy = 46EB2E000003B0 /* PBXContainerItemProxy */;
 		};
-		46EB2E000003C0 /* PBXTargetDependency */ = {
+		46EB2E000003E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = shared;
 			target = 8777C9F6889E59EFFD631D80AEE9048B /* shared */;
-			targetProxy = 46EB2E000003B0 /* PBXContainerItemProxy */;
+			targetProxy = 46EB2E000003D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -465,7 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,9 +546,9 @@
 			};
 			name = Debug;
 		};
-		46EB2E00000220 /* Release */ = {
+		46EB2E00000230 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E000002D0 /* Pods-kmp-jsonplaceholder-ios.release.xcconfig */;
+			baseConfigurationReference = 46EB2E000002E0 /* Pods-kmp-jsonplaceholder-ios.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -565,9 +584,9 @@
 			};
 			name = Release;
 		};
-		46EB2E00000230 /* Debug */ = {
+		46EB2E00000240 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E000002E0 /* Pods-kmp-jsonplaceholder-ios.debug.xcconfig */;
+			baseConfigurationReference = 46EB2E000002F0 /* Pods-kmp-jsonplaceholder-ios.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -632,11 +651,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E00000210 /* Build configuration list for PBXNativeTarget "Pods-kmp-jsonplaceholder-ios" */ = {
+		46EB2E00000220 /* Build configuration list for PBXNativeTarget "Pods-kmp-jsonplaceholder-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EB2E00000230 /* Debug */,
-				46EB2E00000220 /* Release */,
+				46EB2E00000240 /* Debug */,
+				46EB2E00000230 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
