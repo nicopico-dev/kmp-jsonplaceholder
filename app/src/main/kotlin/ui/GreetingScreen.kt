@@ -33,9 +33,7 @@ fun GreetingScreen() {
             onValueChange = { name = it },
             modifier = Modifier.fillMaxWidth(),
         )
-
         Spacer(Modifier.height(8.dp))
-
         Text(greeting)
     }
 }

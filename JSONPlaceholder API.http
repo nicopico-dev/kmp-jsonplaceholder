@@ -1,0 +1,17 @@
+### Get all posts
+GET https://jsonplaceholder.typicode.com/posts
+
+### Get all posts by user 1
+GET https://jsonplaceholder.typicode.com/posts?userId=1
+
+### Get post 1
+GET https://jsonplaceholder.typicode.com/posts/1
+
+### Get user 1
+GET https://jsonplaceholder.typicode.com/users/1
+
+### Get post 1 comments
+GET https://jsonplaceholder.typicode.com/posts/1/comments
+
+### Get albums 1 photos
+GET https://jsonplaceholder.typicode.com/albums/1/photos

@@ -51,6 +51,8 @@ dependencies {
     androidTestImplementation(composeBom)
 
     implementation(libs.bundles.app.compose.ui)
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
 
     coreLibraryDesugaring(libs.android.desugaring)
 }

@@ -1,7 +1,10 @@
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
+    kotlin("plugin.serialization")
     id("com.android.library")
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.ktorfit)
 }
 
 kotlin {
@@ -24,23 +27,35 @@ kotlin {
 
         val commonMain by getting {
             dependencies {
+                implementation(libs.koin.core)
+                implementation(libs.coroutines.core)
+                implementation(libs.bundles.ktor.common)
+                implementation(libs.ktorfit)
+                implementation(libs.kotlinx.dateTime)
+                api(libs.touchlab.kermit)
             }
         }
         val commonTest by getting {
             dependencies {
+                implementation(libs.bundles.shared.commonTest)
             }
         }
 
         val androidMain by getting {
             dependencies {
+                implementation(libs.androidx.lifecycle.viewmodel)
+                implementation(libs.ktor.client.okHttp)
             }
         }
         val androidUnitTest by getting {
             dependencies {
+                implementation(libs.bundles.shared.androidTest)
             }
         }
         val iosMain by getting {
             dependencies {
+                implementation(libs.ktor.client.ios)
+                api(libs.touchlab.kermit.simple)
             }
         }
         val iosTest by getting
@@ -62,6 +77,7 @@ kotlin {
         version = "1.0"
         framework {
             isStatic = false // SwiftUI preview requires dynamic framework
+            export(libs.touchlab.kermit.simple)
         }
         ios.deploymentTarget = "12.4"
         podfile = project.file("../ios/Podfile")
@@ -85,5 +101,18 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    val ktorfitKsp = "de.jensklingenberg.ktorfit:ktorfit-ksp:" + libs.versions.ktorfit.get()
+    listOf(
+        "CommonMainMetadata",
+        "Android", "AndroidTest",
+        "IosX64", "IosX64Test",
+        "IosArm64", "IosArm64Test",
+        "IosSimulatorArm64", "IosSimulatorArm64Test"
+    ).forEach {
+        add("ksp$it", ktorfitKsp)
     }
 }
