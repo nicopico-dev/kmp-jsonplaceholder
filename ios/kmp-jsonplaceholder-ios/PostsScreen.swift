@@ -42,18 +42,20 @@ class ObservablePostListModel: ObservableObject {
     }
     
     func deactivate() {
-        // TODO
+        // NOTE: Current implementation does not cancel the request if the user exit the screen
     }
     
     func load() {
         loading = true
         
-        // NOTE: Current implementation does not cancel the request if the user exit the screen
-        koin.jsonPlaceholderApi.getPosts { posts, error in
-            // Warning "Publishing changes from background threads is not allowed" on each property
+        let jsonPlaceholderApi = koin.jsonPlaceholderApi
+        Task { @MainActor in
+            do {
+                self.posts = try await jsonPlaceholderApi.getPosts()
+            } catch {
+                self.error = error.localizedDescription
+            }
             self.loading = false
-            self.posts = posts
-            self.error = error?.localizedDescription
         }
     }
 }
