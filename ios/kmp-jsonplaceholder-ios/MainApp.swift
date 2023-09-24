@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import shared
 
 @main
-struct AppDelegate: App {
+struct MainApp: App {
+    init() {
+        startKoin()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            GreetingsScreen()
+            PostsScreen()
         }
     }
 }

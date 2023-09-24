@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		130F23EB2ABE34A0006D3E8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130F23EA2ABE34A0006D3E8B /* AppDelegate.swift */; };
+		130F23EB2ABE34A0006D3E8B /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130F23EA2ABE34A0006D3E8B /* MainApp.swift */; };
 		130F23ED2ABE34A0006D3E8B /* GreetingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130F23EC2ABE34A0006D3E8B /* GreetingsScreen.swift */; };
 		130F23EF2ABE34A9006D3E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130F23EE2ABE34A9006D3E8B /* Assets.xcassets */; };
 		130F23F22ABE34A9006D3E8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130F23F12ABE34A9006D3E8B /* Preview Assets.xcassets */; };
 		13184BD92AC03F480050DF3B /* PostsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13184BD82AC03F480050DF3B /* PostsScreen.swift */; };
+		13184BDB2AC0691E0050DF3B /* Koin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13184BDA2AC0691E0050DF3B /* Koin.swift */; };
 		8EA9234CA3710DB98909AB73 /* Pods_kmp_jsonplaceholder_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21620B2E9787FD52A772BA7E /* Pods_kmp_jsonplaceholder_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		130F23E72ABE34A0006D3E8B /* kmp-jsonplaceholder-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kmp-jsonplaceholder-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		130F23EA2ABE34A0006D3E8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		130F23EA2ABE34A0006D3E8B /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		130F23EC2ABE34A0006D3E8B /* GreetingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsScreen.swift; sourceTree = "<group>"; };
 		130F23EE2ABE34A9006D3E8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		130F23F12ABE34A9006D3E8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		13184BD82AC03F480050DF3B /* PostsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsScreen.swift; sourceTree = "<group>"; };
+		13184BDA2AC0691E0050DF3B /* Koin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Koin.swift; sourceTree = "<group>"; };
 		21620B2E9787FD52A772BA7E /* Pods_kmp_jsonplaceholder_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kmp_jsonplaceholder_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7400497F4C198CCB2DA593E8 /* Pods-kmp-jsonplaceholder-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmp-jsonplaceholder-ios.debug.xcconfig"; path = "Target Support Files/Pods-kmp-jsonplaceholder-ios/Pods-kmp-jsonplaceholder-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		95C8187D7A852F7DD6ED262C /* Pods-kmp-jsonplaceholder-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmp-jsonplaceholder-ios.release.xcconfig"; path = "Target Support Files/Pods-kmp-jsonplaceholder-ios/Pods-kmp-jsonplaceholder-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -60,7 +62,8 @@
 		130F23E92ABE34A0006D3E8B /* kmp-jsonplaceholder-ios */ = {
 			isa = PBXGroup;
 			children = (
-				130F23EA2ABE34A0006D3E8B /* AppDelegate.swift */,
+				13184BDA2AC0691E0050DF3B /* Koin.swift */,
+				130F23EA2ABE34A0006D3E8B /* MainApp.swift */,
 				130F23EC2ABE34A0006D3E8B /* GreetingsScreen.swift */,
 				13184BD82AC03F480050DF3B /* PostsScreen.swift */,
 				130F23EE2ABE34A9006D3E8B /* Assets.xcassets */,
@@ -210,7 +213,8 @@
 			files = (
 				13184BD92AC03F480050DF3B /* PostsScreen.swift in Sources */,
 				130F23ED2ABE34A0006D3E8B /* GreetingsScreen.swift in Sources */,
-				130F23EB2ABE34A0006D3E8B /* AppDelegate.swift in Sources */,
+				13184BDB2AC0691E0050DF3B /* Koin.swift in Sources */,
+				130F23EB2ABE34A0006D3E8B /* MainApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
