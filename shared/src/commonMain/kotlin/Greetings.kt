@@ -1,5 +1,8 @@
 package fr.nicopico.kmp.jsonplaceholder
 
+import co.touchlab.skie.configuration.annotations.DefaultArgumentInterop
+
 public object Greetings {
-    public fun greet(name: String): String = "Hello $name!"
+    @DefaultArgumentInterop.Enabled
+    public fun greet(name: String = "World"): String = "Hello $name!"
 }

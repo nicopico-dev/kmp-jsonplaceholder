@@ -5,6 +5,7 @@ plugins {
     id("com.android.library")
     alias(libs.plugins.ksp)
     alias(libs.plugins.ktorfit)
+    alias(libs.plugins.skie)
 }
 
 kotlin {
@@ -33,6 +34,8 @@ kotlin {
                 implementation(libs.ktorfit)
                 implementation(libs.kotlinx.dateTime)
                 api(libs.touchlab.kermit)
+
+                implementation(libs.skie.configuration.annotations)
             }
         }
         val commonTest by getting {

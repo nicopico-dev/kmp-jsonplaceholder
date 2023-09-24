@@ -2,6 +2,7 @@
 kotlin = "1.9.10"
 android-gradle-plugin = "8.1.1"
 ksp = "1.9.10-1.0.13"
+skie = "0.4.20"
 
 ## SDK Versions
 minSdk = "21"
@@ -71,6 +72,8 @@ ktorfit-light = { module = "de.jensklingenberg.ktorfit:ktorfit-lib-light", versi
 
 roboelectric = { module = "org.robolectric:robolectric", version = "4.10.3" }
 
+skie-configuration-annotations = { module = "co.touchlab.skie:configuration-annotations", version.ref = "skie"}
+
 touchlab-kermit = { module = "co.touchlab:kermit", version.ref = "kermit" }
 touchlab-kermit-simple = { module = "co.touchlab:kermit-simple", version.ref = "kermit" }
 
@@ -114,3 +117,4 @@ shared-androidTest = [
 [plugins]
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 ktorfit = { id = "de.jensklingenberg.ktorfit", version.ref = "ktorfit"}
+skie = { id = "co.touchlab.skie", version.ref = "skie"}
