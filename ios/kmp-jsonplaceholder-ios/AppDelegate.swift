@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct kmp_jsonplaceholder_iosApp: App {
+struct AppDelegate: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GreetingsScreen()
         }
     }
 }
